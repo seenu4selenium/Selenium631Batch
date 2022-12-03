@@ -26,17 +26,18 @@ public class FBLogin {
 		driver.findElement(By.name("email")).sendKeys("h2otestingtools@gmail.com");
 		driver.findElement(By.name("pass")).sendKeys("Testing@123");
 		driver.findElement(By.name("login")).click();
+	
 	}
 
-	// Wait for few sec then click on Logout button
-	@Test
-	public void tc_03() throws Exception {
-		// Logout
-		driver.findElement(By.xpath("//*[@aria-label='Your profile']")).click();
-		Thread.sleep(3000);
-
-		String logoutXpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[2]/div[1]";
-		driver.findElement(By.xpath(logoutXpath)).click();
-
-	}
+//	// Wait for few sec then click on Logout button
+//	@Test
+//	public void tc_03() throws Exception {
+//		// Logout
+//		driver.findElement(By.xpath("//*[@aria-label='Your profile']")).click();
+//		Thread.sleep(3000);
+//
+//		String logoutXpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[2]/div[1]";
+//		driver.findElement(By.xpath(logoutXpath)).click();
+//
+//	}
 }
