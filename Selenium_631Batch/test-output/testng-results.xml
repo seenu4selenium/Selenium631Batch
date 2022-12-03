@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-23T19:29:25 CST" name="Default suite" finished-at="2022-11-23T19:29:43 CST" duration-ms="17418">
+    <groups>
+    </groups>
+    <test started-at="2022-11-23T19:29:25 CST" name="Default test" finished-at="2022-11-23T19:29:43 CST" duration-ms="17418">
+      <class name="actions.CopyAndPaste">
+        <test-method signature="f()[pri:0, instance:actions.CopyAndPaste@53aac487]" started-at="2022-11-23T19:29:25 CST" name="f" finished-at="2022-11-23T19:29:43 CST" duration-ms="17384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- actions.CopyAndPaste -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
