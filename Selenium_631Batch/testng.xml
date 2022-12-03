@@ -3,7 +3,7 @@
 <suite name="MySuite_1">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testNG.FB_Login_Retesting_WithDataProvider"/>
+      <!-- <class name="testNG.FB_Login_Retesting_WithDataProvider"/> -->
       <class name="testNG.FBLogin"/>
       <class name="testNG.SBI"/>
     </classes>

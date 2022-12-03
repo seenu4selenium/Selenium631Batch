@@ -18,14 +18,14 @@ public class SBI {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 
-		// Edge browser
-		WebDriverManager.edgedriver().setup();
-		driver = new EdgeDriver();
-		
-		
-		//Firefox browser
-		WebDriverManager.firefoxdriver().setup();
-		driver = new FirefoxDriver();
+//		// Edge browser
+//		WebDriverManager.edgedriver().setup();
+//		driver = new EdgeDriver();
+//		
+//		
+//		//Firefox browser
+//		WebDriverManager.firefoxdriver().setup();
+//		driver = new FirefoxDriver();
 
 		// Maximize the window
 		driver.manage().window().maximize();
