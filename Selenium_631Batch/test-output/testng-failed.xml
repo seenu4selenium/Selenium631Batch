@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="actions.CopyAndPaste">
+      <class name="listeners.ORG">
         <methods>
-          <include name="f"/>
+          <include name="test02_login"/>
+          <include name="test03_Logout"/>
+          <include name="takescreenshot"/>
         </methods>
-      </class> <!-- actions.CopyAndPaste -->
+      </class> <!-- listeners.ORG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

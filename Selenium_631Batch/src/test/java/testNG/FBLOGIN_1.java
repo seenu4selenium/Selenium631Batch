@@ -12,6 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.testng.annotations.AfterClass;
 
 public class FBLOGIN_1 {
@@ -21,15 +22,14 @@ public class FBLOGIN_1 {
 	@BeforeClass // Pre-condition
 	public void beforeClass(@Optional("Chrome") String browserName) {
 		if (browserName.equalsIgnoreCase("Edge")) {
-			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 		} else if (browserName.equalsIgnoreCase("Firefox")) {
-			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		} else if (browserName.equalsIgnoreCase("chrome")) {
-			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
+		} else if (browserName.equalsIgnoreCase("Headless")) {
+			driver = new HtmlUnitDriver();
 		} else {
 			System.out.println("Please give browser name chrome/edge/firefox only......");
 		}
